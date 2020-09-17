@@ -7,16 +7,16 @@ This project is setting up a front-end and back-end for a generic community disc
 
 ### Requesting Information
 
-GET /userinfo
-GET /topics
-GET /topicinfo
+|GET /userinfo|
+|GET /topics|
+|GET /topicinfo|
 
 #### Ordering
-GET /topics?order=update_dt.asc
+|GET /topics?order=update_dt.asc|
 
 #### Filtering
-GET /userinfo?user_id=1234
-GET /topicinfo?topic_id=9876
+|GET /userinfo?user_id=1234|
+|GET /topicinfo?topic_id=9876|
 
 
 ### Database (Name: Forums)
