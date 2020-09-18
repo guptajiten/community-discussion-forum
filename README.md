@@ -74,7 +74,9 @@ GET /topicinfo?topic_id=9876 </br>
 | uuid         		| string, unique id of topic |    
 | name         		| string, name of topic | 
 | tag        		| string, of tags separated by char | 
-| comments_count 	| integer, count of comments on topic |
+| upvote_cnt        | integer, upvote count if user vote it |
+| view_cnt          | integer, views count of topic |
+| comments_cnt 		| integer, count of comments on topic |
 
 #### Table - TOPIC
 | Field Name  | Type, Meaning                                 |
@@ -86,5 +88,5 @@ GET /topicinfo?topic_id=9876 </br>
 | created_by        | string, user uuid |
 | create_dt    		| date, create date |  
 | last_update_dt    | date, last update date  | 
-| comments_count 	| integer, count of comments on topic |
+| comments_cnt 	| integer, count of comments on topic |
 
