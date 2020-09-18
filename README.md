@@ -59,7 +59,7 @@ GET /topicinfo?topic_id=9876 </br>
 | TOPIC        | This will be used to store all information about the topic |  
 
 #### Table - USER
-| Fields Name  | Type, Meaning                                 |
+| Field Name  | Type, Meaning                                 |
 |--------------|-----------------------------------------|
 | uuid         			| string, unique id of user |    
 | name         			| string, name of user | 
@@ -69,7 +69,7 @@ GET /topicinfo?topic_id=9876 </br>
 | subscribed_topics 	| string, of topic uuid separated by char  | 
 
 #### Table - TOPICS
-| Fields Name  | Type, Meaning                                 |
+| Field Name  | Type, Meaning                                 |
 |--------------|-----------------------------------------|
 | uuid         		| string, unique id of topic |    
 | name         		| string, name of topic | 
@@ -77,7 +77,7 @@ GET /topicinfo?topic_id=9876 </br>
 | comments_count 	| integer, count of comments on topic |
 
 #### Table - TOPIC
-| Fields Name  | Type, Meaning                                 |
+| Field Name  | Type, Meaning                                 |
 |--------------|-----------------------------------------|
 | uuid         		| string, unique id of topic |    
 | name         		| string, name of topic | 
