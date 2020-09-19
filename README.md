@@ -72,7 +72,7 @@ GET /topicinfo?topic_id=9876 </br>
 | Field Name  | Type, Meaning                                 |
 |--------------|-----------------------------------------|
 | uuid         		| string, unique id of topic |    
-| name         		| string, name of topic | 
+| title         		| string, title of topic | 
 | category         		| string, name of topic | 
 | last_update_dt    | date, last update date  |
 | comments_cnt 		| integer, count of comments on topic |
@@ -82,7 +82,7 @@ GET /topicinfo?topic_id=9876 </br>
 | Field Name  | Type, Meaning                                 |
 |--------------|-----------------------------------------|
 | uuid         		| string, unique id of topic |    
-| name         		| string, name of topic | 
+| title         		| string, title of topic | 
 | tag        		| string, of tags separated by char |
 | comments        	| string, of comments separated by a char |
 | created_by        | string, user uuid |
