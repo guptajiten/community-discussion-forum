@@ -76,7 +76,7 @@ GET /topicinfo?topic_id=9876 </br>
 | category         		| string, name of topic | 
 | last_update_dt    | date, last update date  |
 | comments_cnt 		| integer, count of comments on topic |
-| last_update_dt    | bool, discussion is complete or not |
+| complete    | bool, discussion is complete or not |
 
 #### Table - TOPIC
 | Field Name  | Type, Meaning                                 |
