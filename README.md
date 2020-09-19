@@ -73,9 +73,7 @@ GET /topicinfo?topic_id=9876 </br>
 |--------------|-----------------------------------------|
 | uuid         		| string, unique id of topic |    
 | name         		| string, name of topic | 
-| tag        		| string, of tags separated by char | 
-| upvotes_cnt        | integer, upvote count if user vote it |
-| views_cnt          | integer, views count of topic |
+| last_update_dt    | date, last update date  |
 | comments_cnt 		| integer, count of comments on topic |
 
 #### Table - TOPIC
