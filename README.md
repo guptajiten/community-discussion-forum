@@ -73,7 +73,7 @@ GET /topicinfo?topic_id=9876 </br>
 |--------------|-----------------------------------------|
 | uuid         		| string, unique id of topic |    
 | title         		| string, title of topic | 
-| category         		| string, name of topic | 
+| tag         		| string, tag for topic | 
 | last_update_dt    | date, last update date  |
 | comments_cnt 		| integer, count of comments on topic |
 | complete    | bool, discussion is complete or not |
@@ -83,10 +83,11 @@ GET /topicinfo?topic_id=9876 </br>
 |--------------|-----------------------------------------|
 | uuid         		| string, unique id of topic |    
 | title         		| string, title of topic | 
-| tag        		| string, of tags separated by char |
+| tag         		| string, tag for topic | 
 | comments        	| string, of comments separated by a char |
 | created_by        | string, user uuid |
 | create_dt    		| date, create date |  
 | last_update_dt    | date, last update date  | 
 | comments_cnt 	| integer, count of comments on topic |
+| complete    | bool, discussion is complete or not |
 
