@@ -75,7 +75,6 @@ GET /topicinfo?topic_id=9876 </br>
 | id         		    | integer, unique id of topic |    
 | title         		| string, title of topic | 
 | tag_id         		| integer, tag for topic | 
-| complete          | boolean, discussion is complete or not |
 | decription      	| string, decription of topic |
 | c_date            | date, create date  |
 | u_date            | date, update date  |
