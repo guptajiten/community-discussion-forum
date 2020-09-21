@@ -1,0 +1,26 @@
+{  
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch via NPM",
+            "runtimeExecutable": "npm", //change this to your npm path
+            "runtimeArgs": [
+                "run-script",
+                "debug",
+                "--",
+                "--inspect-brk=9229"
+            ],
+             "port": 8080,
+            "internalConsoleOptions": "openOnSessionStart",
+            "console": "integratedTerminal",
+        },
+        // {
+        //     "name": "Attach to Process",
+        //     "type": "node",
+        //     "request": "attach",
+        //     "processId": "${command:PickProcess}"
+        // }
+      ]
+}

@@ -1,0 +1,28 @@
+body {
+	font-size: $text-font-size;
+}
+.cdfor-fld{
+	input, textarea, select{
+		font-size: $text-font-size;
+	}
+}
+h1, h2 {
+	font-weight: 300;
+}
+
+
+[data-entity="comics"] {
+	.cdfor-cards-body > div{
+		height: 460px;
+	}
+}
+[data-entity="contact"] .cdfor-cards-body>div{
+	height: 143px;
+}
+[data-entity="topics"] {
+	margin-top: 50px;
+}
+[data-entity="topics"] .cdfor-cards-body>div {
+	height: 152px;
+}
+}

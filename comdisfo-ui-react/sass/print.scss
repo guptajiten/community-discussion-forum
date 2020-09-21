@@ -1,0 +1,24 @@
+@media print {
+
+  // things to hide
+    .cdfor-buttons,
+    .cdfo-toolbar,
+    .cdfo-noprint{
+      display: none !important;
+    }
+    
+    .cdfo-filters {
+      border: none;
+      > .btn {
+        display: none !important;
+      }
+    }
+
+  // things to show
+    .cdfo-filters{
+      min-height:0;
+    }
+    .tab-pane{
+      display: block !important;
+    }
+}

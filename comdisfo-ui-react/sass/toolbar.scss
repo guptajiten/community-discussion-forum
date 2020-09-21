@@ -1,0 +1,62 @@
+.cdfo-toolbar{
+  > ul {
+    margin-bottom: 0;
+    > .cdfo-sel .glyphicon:before{
+      color:black;
+    }
+    > li {
+      list-style: none;
+      float: left;
+      >a {
+        cursor: pointer;
+        display: inline-block;
+        text-decoration: none;
+        color: $color-nav;
+        transition: all 0.5s ease;
+        padding: 10px 6px 10px 8px;
+        &:hover{
+          color: $color-nav-hover;
+        }
+      }
+    }
+    &.active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: $color-nav-active;
+      }
+    }
+  }
+}
+
+.cdfo-dropdown-icons{
+  min-width: 50px;
+}
+
+// bootstrap override
+.dropdown-menu>li>a{
+  padding: 3px 10px;
+}
+
+.cdfo-filter-on{
+  background-color: #e0f2f1;
+}
+.cdfo-view-on{
+  color: $color-icon-hover;
+}
+//.cdfo-tb-status{
+//  color: #0f0f0f !important;
+//  min-height: 35px;
+//  line-height: 35px;
+//  margin-top: 2px;
+//  margin-right: 5px;
+  //max-width:200px;
+  //@include ellipsis();
+//}
+
+.cdfor-many-list{
+  .cdfor-actions{
+    top:0;
+    flex-direction: row;
+  }
+}
