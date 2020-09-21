@@ -57,11 +57,12 @@ GET /topicinfo?topic_id=9876 </br>
 | USER         | This will be used to store user info |    
 | TOPICS       | This will be used to store all topics of a forum |  
 | TOPIC        | This will be used to store all information about the topic |  
+| TOPIC_TAG    | This will be used to store list of values for Tags |  
 
 #### Table - USER
 | Field Name  | Type, Meaning                                 |
 |--------------|-----------------------------------------|
-| uuid         			| string, unique id of user |    
+| uuid         			| integer, unique id of user |    
 | name         			| string, name of user | 
 | email        			| string, email of user, userid of user |
 | create_dt    			| date, create date of user info |  
@@ -71,22 +72,28 @@ GET /topicinfo?topic_id=9876 </br>
 #### Table - TOPICS
 | Field Name  | Type, Meaning                                 |
 |--------------|-----------------------------------------|
-| uuid         		| string, unique id of topic |    
-| name         		| string, name of topic | 
-| tag        		| string, of tags separated by char | 
-| upvotes_cnt        | integer, upvote count if user vote it |
-| views_cnt          | integer, views count of topic |
-| comments_cnt 		| integer, count of comments on topic |
+| id         		    | integer, unique id of topic |    
+| title         		| string, title of topic | 
+| tag_id         		| integer, tag for topic | 
+| decription      	| string, decription of topic |
+| c_date            | date, create date  |
+| u_date            | date, update date  |
+| c_uid             | integer, create user  |
+| u_uid             | integer, update user  |
+| nb_comments 		  | integer, comments id |
+| nb_votings		    | integer, voting count |
+
 
 #### Table - TOPIC
 | Field Name  | Type, Meaning                                 |
 |--------------|-----------------------------------------|
 | uuid         		| string, unique id of topic |    
-| name         		| string, name of topic | 
-| tag        		| string, of tags separated by char |
+| title         		| string, title of topic | 
+| tag         		| string, tag for topic | 
 | comments        	| string, of comments separated by a char |
 | created_by        | string, user uuid |
 | create_dt    		| date, create date |  
 | last_update_dt    | date, last update date  | 
 | comments_cnt 	| integer, count of comments on topic |
+| complete    | bool, discussion is complete or not |
 
