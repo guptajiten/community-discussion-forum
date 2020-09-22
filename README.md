@@ -49,36 +49,34 @@ Configuration options are set in the file [config.js]
 
 ## Requesting Information
 
-GET /userinfo </br>
 GET /topics </br>
-GET /topicinfo </br>
+POST /addcomments </br>
 
 ## Ordering
 GET /topics?order=update_dt.asc
 
 ## Filtering
-GET /userinfo?user_id=1234 </br>
-GET /topicinfo?topic_id=9876 </br>
+GET /topicinfo?topic_id=1 </br>
 
 ## Database (name: comdisfo)
 
 ### Tables 
 | Table Name   | Meaning                                 |
 |--------------|-----------------------------------------|
-| USER         | This will be used to store user info |    
+| COMMENT         | This will be used to store comments |    
 | TOPICS       | This will be used to store all topics of a forum |  
 | TOPIC        | This will be used to store all information about the topic |  
 | TOPIC_TAG    | This will be used to store list of values for Tags |  
 
-#### Table - USER
+#### Table - COMMENT
 | Field Name  | Type, Meaning                                 |
 |--------------|-----------------------------------------|
-| uuid         			| integer, unique id of user |    
-| name         			| string, name of user | 
-| email        			| string, email of user, userid of user |
-| create_dt    			| date, create date of user info |  
-| last_update_dt 		| date, last update date of user info | 
-| subscribed_topics 	| string, of topic uuid separated by char  | 
+| id         			| integer, unique id of comment |    
+| topic_id         			| string, parent topic to comment| 
+| comment        			| string, comment of user |
+| c_date    			| date, create date  |  
+| c_uid 		| integer, create user  |
+
 
 #### Table - TOPICS
 | Field Name  | Type, Meaning                                 |
