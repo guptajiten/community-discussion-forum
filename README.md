@@ -5,7 +5,18 @@ This project is for setting up a front-end and back-end for a generic community 
 ## Installation
 
 ### a. server-node
+Database Seeding script : node js/setup/database.js
 
+Start server using: 
+
+```bash
+# Install dependencies
+npm install
+
+# Run the node.js server
+npm start
+
+```
 
 ### b. ui-react
 
